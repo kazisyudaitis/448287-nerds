@@ -4,3 +4,22 @@ body {
     line-height: normal;
     font-style: normal;
 }
+.page-header {
+	background-color: #ddd;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	outline: 1px solid red;
+}
+.page-title-wrap {
+
+	background-color: #ddd;
+}
+.page-title {
+margin: 0;
+text-align: center;
+}
+.filter-features label[for="filter-news"] {
+	color: red;
+}

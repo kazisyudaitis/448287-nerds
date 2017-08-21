@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
-  <title>HTML Academy: Нёрдс</title>
+  <title>HTML Academy: Нёрдс
+  </title>
 </head>
 
 <body>
@@ -12,57 +13,57 @@
     <div class="container">
       <nav class="main-navigation">
         <a class="main-header-logo"><img src="img/index=logo.svg" width="368" height="153" alt="Логотип веб студии Нердс"></a>
-        <ul class="site navigation">
+        <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
-          <li><a href="customer.html">Клиенты</a></li>
+          <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
         <div class="user-basket">
-          <a href="basket.html">Корзина</a>
+          <a href="#">Корзина</a>
         </div>
       </nav>
     </div>
   </header>
   <main class="page-main">
     <section class="slides-wrap">
-      
-      <input type="radio" name="pg" id="pg1" checked>
-      <input type="radio" name="pg" id="pg2">
-      <input type="radio" name="pg" id="pg3">
-      <div class="slides-pagination">
-        <label for="pg1">1<img src="D:\HTML\448287-nerds\img\slide1.svg"></label>
-        <label for="pg2">2</label>
-        <label for="pg3">3</label>
-      </div>
-      <div class="slide slide-1">
-        <p>
-          <b>Долго, дорого, скрупулезно</b> Математически выверенный дизайн для вашего сайта или приложения.
-        </p>
-        <a class="btn" href="#">Узнать больше</a>
-      </div>
-      <div class="slide slide-2">
-        <p>
-          <b>Любим математику как не кто другой</b> никакого креатива, только математические формулыдля расчета идеальных пропорций.
-        </p>
-        <a class="btn" href="#">Узнать больше</a>
-      </div>
-      <div class="slide slide-3">
-        <p>
-          <b>Только ночь, только хардкор</b> Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
-        </p>
-        <a class="btn" href="#">Узнать больше</a>
+      <div class="container">
+        <input type="radio" name="pg" id="pg1" checked>
+        <input type="radio" name="pg" id="pg2">
+        <input type="radio" name="pg" id="pg3">
+        <div class="slides-pagination">
+          <label for="pg1">1</label>
+          <label for="pg2">2</label>
+          <label for="pg3">3</label>
+        </div>
+        <div class="slide slide-1">
+          <p>
+            <b>Долго, дорого, скрупулезно</b> Математически выверенный дизайн для вашего сайта или приложения.
+          </p>
+          <a class="btn" href="#">Узнать больше</a>
+        </div>
+        <div class="slide slide-2">
+          <p>
+            <b>Любим математику как не кто другой</b> никакого креатива, только математические формулыдля расчета идеальных пропорций.
+          </p>
+          <a class="btn" href="#">Узнать больше</a>
+        </div>
+        <div class="slide slide-3">
+          <p>
+            <b>Только ночь, только хардкор</b> Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
+          </p>
+          <a class="btn" href="#">Узнать больше</a>
+        </div>
       </div>
     </section>
     <div class="container">
       <section class="advantages">
         <section class="advantages-item web">
-        <img src="D:\HTML\448287-nerds\img\illustration-1.png" width="300px" height="146px">
           <h3>Веб сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-          <a class="btn btn-red" href="#>Заказать</a>
+          <a class="btn btn-red" href="#">Заказать</a>
         </section>
-        <section class="advantages-item mobile">
+        <section class=" advantages-item mobile">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google play</p>
           <a class="btn btn-green" href="#">Заказать</a>
@@ -108,28 +109,22 @@
       <section class="client">
         <ul class="client-list">
           <li class="client-item">
-            <a class="client-botton" href="https://htmlacademy.ru">html academy</a>
+            <a class="client-button" href="https://htmlacademy.ru">html academy</a>
           </li>
           <li class="client-item">
-            <a class="client-botton" href="#">Барбершоп Бородинский</a>
+            <a class="client-button" href="#">Барбершоп Бородинский</a>
           </li>
           <li class="client-item">
-            <a class="client-botton" href="#">pink</a>
+            <a class="client-button" href="#">pink</a>
           </li>
           <li class="client-item">
-            <a class="client-botton" href="#">mishka</a>
+            <a class="client-button" href="#">mishka</a>
           </li>
         </ul>
       </section>
-      <ul class="pagination-list">
-        <li class="pagination-item"><a href="#">1</a></li>
-        <li class="pagination-item" pagination-item-current><a>2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item"><a href="#">следующаа</a></li>
-      </ul>
     </div>
   </main>
-  <footer class="main-footer">
+  <footer class="page-footer">
     <section class="footer-map">
       <div class="container">
         <section class="contacts">
@@ -168,8 +163,8 @@
       <input type="text" name="mail" id="email-field" placeholder="Для отправки ответа">
     </label>
     <label for="comment-field">
-    <p>Текст письма:</p>
-    <textarea name="comment" id="comment-field">В свободной форме</textarea>
+      <p>Текст письма:</p>
+      <textarea name="comment" id="comment-field">В свободной форме</textarea>
     </label>
     <p><a class="btn btn-red" href="#">отправить</a></p>
   </section>

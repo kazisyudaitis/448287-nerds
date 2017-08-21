@@ -8,85 +8,68 @@
 </head>
 
 <body>
-  <header class="main header">
-    <nav class="main navigation">
-      <a class="main-header-logo" href="index.html"><img src="img/index=logo.svg" width="368" height="153" alt="Логотип веб студии Нердс"></a>
-      <ul class="site navigation">
-        <li><a href="studio.html">Студия</a></li>
-        <li><a href="customer.html">Клиенты</a></li>
-        <li class="site-navigation-current"><a>Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <ul class="user navigation">
-        <li><a href="basket.html">Корзина</a></li>
-      </ul>
-    </nav>
+  <header class="page-header">
+    <div class="container">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html"><img src="img/index=logo.svg" width="368" height="153" alt="Логотип веб студии Нердс"></a>
+        <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a class="current-page" href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <div class="user-basket">
+          <a href="#">Корзина</a>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
-    <h1 class="page-title">Магазин готовых шаблонов</h1>
+  <div class="page-title-wrap">
     <div class="container">
-      <form class="filters" method="get" action="https://acho.htmlacademy.ru">
-        <fieldset>
+    <h1 class="page-title">Магазин готовых шаблонов</h1>
+    </div>
+  </div>
+    <div class="container">
+      <form class="filter" method="get" action="https://acho.htmlacademy.ru">
+        <fieldset class="filter-price">
           <legend>Стоимость:</legend>
+          <div>Слайдер</div>
         </fieldset>
-        <fieldset>
-          <legend>
-            Сетка
-          </legend>
-          <ul>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" id="filter-adaptive" value="adaptive">
+        <fieldset class="filter-grid">
+          <legend>Сетка:</legend>
+              <input type="radio" name="product-group" id="filter-adaptive" value="adaptive" checked>
               <label for="filter-adaptive">Адаптивная</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" id="filter-fixed" value="fixed">
+              <input type="radio" name="product-group" id="filter-fixed" value="fixed">
               <label for="filter-fixed">Фиксированная</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" id="filter-rubber" value="rubber">
+              <input type="radio" name="product-group" id="filter-rubber" value="rubber">
               <label for="filter-rubber">Резиновая</label>
-            </li>
-          </ul>
         </fieldset>
-        <fieldset>
-          <legend>
-            Особенности
-          </legend>
-          <ul>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+        <fieldset class="filter-features">
+          <legend>Особенности:</legend>
+              <input type="checkbox" name="slider" id="filter-slider" checked>
               <label for="filter-slider">Cлайдер</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage" id="filter-advantage-block" checked>
+              <input type="checkbox" name="advantage" id="filter-advantage-block">
               <label for="filter-advantage-block"> Блок преимуществ</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+              <input type="checkbox" name="news" id="filter-news" checked>
               <label for="filter-news">Новости</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="galery" id="filter-gallery" checked>
+              <input type="checkbox" name="galery" id="filter-gallery">
               <label for="filter-gallery">Галерея</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket" checked>
+              <input type="checkbox" name="basket" id="filter-basket">
               <label for="filter-basket">Корзина</label>
-            </li>
-          </ul>
         </fieldset>
-        <button type="submit" class="filter-button button">Показать</button>
+        <button type="submit" class="filter-btn btn">Показать</button>
       </form>
       <section class="catalog">
         <div class="sorting">
-          <h3>сортировать:</h3>
-          <ul class="breadcrumbs">
-            <li><a href="#">по цене</a></li>
-            <li><a href="#">по типу</a></li>
-            <li><a href="#">по названию</a></li>
-            <li>
-              <a href="">up</a>
-              <a href="">down</a>
+          <b>сортировать:</b>
+          <ul class="sorting-list">
+            <li class="sorting-item"><a href="#">по цене</a></li>
+            <li class="sorting-item"><a href="#">по типу</a></li>
+            <li class="sorting-item"><a href="#">по названию</a></li>
+            <li class="sorting-item ">
+              <a class="arrow-up" href="#">up</a>
+              <a class="arrow-down" href="">down</a>
             </li>
           </ul>
         </div>
@@ -147,14 +130,14 @@
         </ul>
       </section>
       <ul class="pagination-list">
-        <li class="pagination-item"><a href="#">1</a></li>
-        <li class="pagination-item" pagination-item-current><a>2</a></li>
+        <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+        <li class="pagination-item" ><a>2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
         <li class="pagination-item"><a href="#">следующаа</a></li>
       </ul>
     </div>
   </main>
-  <footer class="main-footer">
+  <footer class="page-footer">
     <section class="footer-map">
       <div class="container">
         <section class="contacts">
@@ -199,4 +182,5 @@
     <p><a class="btn btn-red" href="#">отправить</a></p>
   </section>
 </body>
+
 </html>
