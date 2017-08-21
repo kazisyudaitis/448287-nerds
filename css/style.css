@@ -1,25 +1,41 @@
 body {
-     font-family: "Roboto", "Myriad Pro"
-     font-size:16 px ;
-    line-height: normal;
-    font-style: normal;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  margin: 0;
 }
+
 .page-header {
-	background-color: #ddd;
+  background-color: #ddd;
 }
+
 .container {
-	width: 1200px;
-	margin: 0 auto;
-	outline: 1px solid red;
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+  outline: 1px solid red;
 }
+
 .page-title-wrap {
 
-	background-color: #ddd;
+  background-color: #ddd;
 }
+
 .page-title {
-margin: 0;
-text-align: center;
+  margin: 0;
+  text-align: center;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 700;
 }
+
 .filter-features label[for="filter-news"] {
-	color: red;
+  color: red;
+}
+.catalog-item-hover h3 {
+
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
