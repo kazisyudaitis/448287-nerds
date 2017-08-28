@@ -1,12 +1,200 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: normal;
-  margin: 0;
 }
 
 .page-header {
   background-color: #ddd;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  color: #ffffff;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #fb565a;
+}
+
+.btn:focuc {
+  background-color: #e74246;
+}
+
+.btn:active {
+  background-color: #d7373b;
+}
+
+.btn-green {
+  background-color: #00ca74;
+}
+
+.btn-green:hover {
+  background-color: #00bc6c;
+}
+
+.btn-green:focus {
+  background-color: #00aa62;
+}
+
+.btn-yellow {
+  background-color: #efc84a;
+}
+
+.btn-yellow:hover {
+  background-color: #eab534
+}
+
+.btn-yellow:focus {
+  background-color: #e5a722;
+}
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:focus {
+  color: #afafaf;
+}
+
+.site-navigation a:active {
+  color: #000000;
+}
+
+.user-basket {
+  list-style: none;
+}
+
+.user-basket a:hover {
+  color: #fb565a;
+}
+
+.user-basket a:focus {
+  color: #afafaf;
+}
+
+.user-basket a:active {
+  color: #000000;
+}
+
+.advantages-item {
+  text-align: center;
+}
+
+.advantages-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.studio h3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.description b {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.features-list b {
+  font-size: 45px;
+  line-height: 10.06px;
+}
+
+.client-list {
+  list-style: none;
+  color: #cccccc;
+  opacity: 0.5;
+
+}
+
+.client-item a:hover {
+  color: #000000;
+  opacity: 1;
+}
+
+.client-item a:focus {
+  color: #e5e5e5;
+  opacity: 0.2;
+}
+
+.page-footer {
+  color: #000000;
+  background-repeat: repeat;
+}
+
+.footer-text b {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.footer-text {
+  font-family: 16px;
+  line-height: 22px;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.write {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold; 
+}
+
+.write h3 {
+  font-size: 45px;
+  line-height: 45px;  
+
+}
+.write input {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.write input:hover {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  opacity: 1;
+  border: 2px solid: #000000;
+}
+
+.write input:focus {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000; 
 }
 
 .container {
@@ -32,6 +220,7 @@ body {
 .filter-features label[for="filter-news"] {
   color: red;
 }
+
 .catalog-item-hover h3 {
 
   font-size: 16px;
