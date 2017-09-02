@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <title>HTML Academy: Нёрдс
-  </title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <title>HTML Academy: Нёрдс</title>
 </head>
 
 <body>
@@ -24,39 +24,45 @@
           <a href="#">Корзина</a>
         </div>
       </nav>
-    </div>
-  </header>
-  <main class="page-main">
-    <section class="slides-wrap">
-      <div class="container">
-        <input type="radio" name="pg" id="pg1" checked>
-        <input type="radio" name="pg" id="pg2">
-        <input type="radio" name="pg" id="pg3">
-        <div class="slides-pagination">
-          <label for="pg1">1</label>
-          <label for="pg2">2</label>
-          <label for="pg3">3</label>
+      <div class="slider">
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
         </div>
-        <div class="slide slide-1">
-          <p>
-            <b>Долго, дорого, скрупулезно</b> Математически выверенный дизайн для вашего сайта или приложения.
-          </p>
-          <a class="btn" href="#">Узнать больше</a>
-        </div>
-        <div class="slide slide-2">
-          <p>
-            <b>Любим математику как не кто другой</b> никакого креатива, только математические формулыдля расчета идеальных пропорций.
-          </p>
-          <a class="btn" href="#">Узнать больше</a>
-        </div>
-        <div class="slide slide-3">
-          <p>
-            <b>Только ночь, только хардкор</b> Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
-          </p>
-          <a class="btn" href="#">Узнать больше</a>
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Долго, дорого, скрупулезно</div>
+              <p>Математически выверенный дизайн
+                <br> для вашего сайта или мобильного приложения.</p>
+              <a class="btn btn-red" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Дорого, скрупулезно</div>
+              <p>Математически выверенный дизайн
+                <br> для вашего сайта или мобильного приложения.</p>
+              <a class="btn btn-red" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Скрупулезно</div>
+              <p>Математически выверенный дизайн
+                <br> для вашего сайта или мобильного приложения.</p>
+              <a class="btn btn-red" href="#">Узнать больше</a>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </header>
+  <main>
     <div class="container">
       <section class="advantages">
         <section class="advantages-item web">
@@ -129,21 +135,17 @@
     <section class="footer-map">
       <div class="container">
         <section class="contacts">
-          <h2>NЁRDS DESIGN STUDIO</h2>
+          <h2>Nёrds design studio</h2>
           <p>
             191186, Санкт-Петербург,
             <br> ул. Б. Канюшенная д. 19/8
             <br> тел. +7 (812) 275-75-75
           </p>
-          <a class="btn-write" href="write.html">Напишите нам</a>
+          <a class=" btn btn-red" href="write.html">Напишите нам</a>
         </section>
       </div>
     </section>
-    <div class="container">
-      <section class="footer-text">
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей</p>
-      </section>
+    <div class="container footer-container">
       <section class="footer-social">
         <ul>
           <li><a class="social-btn" href="#">В контакте</a></li>
@@ -151,9 +153,13 @@
           <li><a class="social-btn" href="#">Инстаграм</a></li>
         </ul>
       </section>
+      <section class="footer-text">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей</p>
+      </section>
     </div>
   </footer>
-  <section class="write us">
+  <section class="write-us">
     <h3>Напишите нам</h3>
     <label for="name-field">
       <p>Ваше имя:</p>

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy:Нёрдс</title>
 </head>
@@ -22,41 +23,53 @@
           <a href="#">Корзина</a>
         </div>
       </nav>
+        <h1 class="page-title">Магазин готовых шаблонов</h1>
+      </div>
     </div>
   </header>
-  <main class="page-main">
-  <div class="page-title-wrap">
-    <div class="container">
-    <h1 class="page-title">Магазин готовых шаблонов</h1>
-    </div>
-  </div>
-    <div class="container">
+  <main class="page-main container">
       <form class="filter" method="get" action="https://acho.htmlacademy.ru">
         <fieldset class="filter-price">
           <legend>Стоимость:</legend>
-          <div>Слайдер</div>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">от
+                <input name="min-price" type="text" value="0">
+              </label>
+              <label class="max-price">до
+                <input name="max-price" type="text" value="15000">
+              </label>
+            </div>
+          </div>
         </fieldset>
         <fieldset class="filter-grid">
           <legend>Сетка:</legend>
-              <input type="radio" name="product-group" id="filter-adaptive" value="adaptive" checked>
-              <label for="filter-adaptive">Адаптивная</label>
-              <input type="radio" name="product-group" id="filter-fixed" value="fixed">
-              <label for="filter-fixed">Фиксированная</label>
-              <input type="radio" name="product-group" id="filter-rubber" value="rubber">
-              <label for="filter-rubber">Резиновая</label>
+          <input type="radio" name="product-group" id="filter-adaptive" value="adaptive" checked>
+          <label for="filter-adaptive">Адаптивная</label>
+          <input type="radio" name="product-group" id="filter-fixed" value="fixed">
+          <label for="filter-fixed">Фиксированная</label>
+          <input type="radio" name="product-group" id="filter-rubber" value="rubber">
+          <label for="filter-rubber">Резиновая</label>
         </fieldset>
         <fieldset class="filter-features">
           <legend>Особенности:</legend>
-              <input type="checkbox" name="slider" id="filter-slider" checked>
-              <label for="filter-slider">Cлайдер</label>
-              <input type="checkbox" name="advantage" id="filter-advantage-block">
-              <label for="filter-advantage-block"> Блок преимуществ</label>
-              <input type="checkbox" name="news" id="filter-news" checked>
-              <label for="filter-news">Новости</label>
-              <input type="checkbox" name="galery" id="filter-gallery">
-              <label for="filter-gallery">Галерея</label>
-              <input type="checkbox" name="basket" id="filter-basket">
-              <label for="filter-basket">Корзина</label>
+          <input type="checkbox" name="slider" id="filter-slider" checked>
+          <label for="filter-slider">Cлайдер</label>
+          <input type="checkbox" name="advantage" id="filter-advantage-block">
+          <label for="filter-advantage-block"> Блок преимуществ</label>
+          <input type="checkbox" name="news" id="filter-news" checked>
+          <label for="filter-news">Новости</label>
+          <input type="checkbox" name="galery" id="filter-gallery">
+          <label for="filter-gallery">Галерея</label>
+          <input type="checkbox" name="basket" id="filter-basket">
+          <label for="filter-basket">Корзина</label>
         </fieldset>
         <button type="submit" class="filter-btn btn">Показать</button>
       </form>
@@ -128,14 +141,13 @@
             </div>
           </li>
         </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+          <li class="pagination-item"><a>2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">следующаа</a></li>
+        </ul>
       </section>
-      <ul class="pagination-list">
-        <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-        <li class="pagination-item" ><a>2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item"><a href="#">следующаа</a></li>
-      </ul>
-    </div>
   </main>
   <footer class="page-footer">
     <section class="footer-map">
@@ -151,11 +163,7 @@
         </section>
       </div>
     </section>
-    <div class="container">
-      <section class="footer-text">
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей</p>
-      </section>
+    <div class="container footer-container">
       <section class="footer-social">
         <ul>
           <li><a class="social-btn" href="#">В контакте</a></li>
@@ -163,9 +171,13 @@
           <li><a class="social-btn" href="#">Инстаграм</a></li>
         </ul>
       </section>
+      <section class="footer-text">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей</p>
+      </section>
     </div>
   </footer>
-  <section class="write us">
+  <section class="write-us">
     <h3>Напишите нам</h3>
     <label for="name-field">
       <p>Ваше имя:</p>
